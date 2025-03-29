@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caixa do Mundo - Jogo</title>
+  <link rel="stylesheet" href="style.css">
+<style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#game-container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+#game-canvas {
+  border: 2px solid #000;
+  background-color: #dfe3e8;
+}
+
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+canvas {
+  display: block;
+  margin-top: 50px;
+}</style>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas" width="800" height="600"></canvas>
+    <div id="controls">
+      <button id="create-world">Criar Mundo</button>
+      <button id="add-civilization">Adicionar Civilização</button>
+      <button id="add-person">Adicionar Pessoa</button>
+    </div>
+  </div>
+
+  <script src="caixadomundo.js"></script>
+</body>
+</html>
